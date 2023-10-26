@@ -3,12 +3,12 @@
 using namespace std;
 
 int main() {
-    int money_count, chocolate_count;
-    int chocolatePrice = 1;
+    int money_count, chocolate_count, wrapper_count;
     cin >> money_count;
 
-    chocolate_count = money_count;
-    int wrapper_count = money_count;
+    chocolate_count = money_count + (money_count / 3);
+    wrapper_count = money_count;
+
     int chocolate, wrap;
 
     while (wrapper_count > 3) {
@@ -18,6 +18,6 @@ int main() {
         wrapper_count = chocolate + wrap;
         chocolate_count += wrapper_count / 3;
     }
-    cout << chocolate_count + (money_count / 3);
+    cout << chocolate_count;
     return 0;
 }
