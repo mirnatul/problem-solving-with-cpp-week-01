@@ -6,8 +6,8 @@ int main() {
     int money_count, chocolate_count, wrapper_count;
     cin >> money_count;
 
-    chocolate_count = money_count + (money_count / 3);
     wrapper_count = money_count;
+    chocolate_count = money_count + (wrapper_count / 3);
 
     int chocolate, wrap;
 
